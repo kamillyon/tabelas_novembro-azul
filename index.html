@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header class="menu">
+        <h1>🎗️ Novembro Azul: Um Toque pela Vida</h1>
+        <nav>
+            <ul>
+                <li><a href="#origem">Inicio</a></li>
+                <li><a href="#estatisticas">Estatísticas</a></li>
+                <li><a href="#exames">Exames</a></li>
+                <li><a href="#agendamentos">Agendamento</a></li>
+            </ul>
+        </nav>
+        <mark>💙 Mês Mundial de Combate ao Câncer de Próstata</mark>
+    </header>
+
+    <div class="origem" id="origem">
+        <h2 >ORIGEM</h2>
+        <p>O mês do Novembro Azul foi criado com o intuito de conscientizar os homens sobre a importância da prevenção do câncer de próstata e outras doenças masculinas.</p>
+        <p>O movimento iniciou em 2003, na Austrália, com o nome de Movember. Chegou ao Brasil por volta de 2008 a 2011, com o objetivo de quebrar preconceitos e incentivar o cuidado integral.</p>
+        <p>O câncer de próstata é o segundo tipo de câncer mais comum entre os homens no Brasil. O diagnóstico preconce aumenta drasticamente as chances de cura.</p>
+    </div>
+    
+    <h2 class="estatisticas" id="estatisticas">ESTATÍSTICAS</h2>
+    <div class="cards">
+        <div class="card1">
+            <div class="number">12.450</div>
+            <div>Exames Realizados este mês.</div>
+        </div>
+        <div class="card2">
+            <div class="number">98.2%</div>
+            <div>Chance de cura com diagnóstico precoce.</div>
+        </div>
+        <div class="card3">
+            <div class="number">18</div>
+            <div>Clínicas e Postos Parceiros Ativos.</div>
+        </div>
+        <div class="card4">
+            <div class="number">45+</div>
+            <div>Idade recomendada para início do rastreamento.</div>
+        </div>
+    </div>
+
+    <div class="exames" id="exames">
+        <h2>EXAMES</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horários</th>
+                    <th>Paciente</th>
+                    <th>Idade</th>
+                    <th>Tipo de Exame</th>
+                    <th>Médico Urologista</th>
+                    <th>Status do Exame</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08h00</td>
+                    <td>Carlos Alberto Silva</td>
+                    <td>54</td>
+                    <td>Consulta Preventiva</td>
+                    <td>Dra. Mariana Santos</td>
+                    <td class="concluido">Concluído</td>
+                </tr>
+                <tr>
+                    <td>08h45</td>
+                    <td>João Pedro Santos</td>
+                    <td>62</td>
+                    <td>Exame de PSA</td>
+                    <td>Dra. Camilla Ferreira</td>
+                    <td class="concluido">Concluído</td>
+                </tr>
+                <tr>
+                    <td>09h30</td>
+                    <td>Antônio Marcos Oliveira</td>
+                    <td>58</td>
+                    <td>Ultrassonografia de Próstata</td>
+                    <td>Dr. Roberto Mendes</td>
+                    <td class="andamento">Em Andamento</td>
+                </tr>
+                <tr>
+                    <td>10h15</td>
+                    <td>Francisco Assis Souza</td>
+                    <td>67</td>
+                    <td rowspan="2">Biópsia</td>
+                    <td rowspan="2">Dr. Fernando Costa</td>
+                    <td class="andamento">Em Andamento</td>
+                </tr>
+                <tr>
+                    <td>11h00</td>
+                    <td>Luiz Carlos Pereira</td>
+                    <td>49</td>
+                    <td class="agendado">Agendado</td>
+                </tr>
+                <tr>
+                    <td>13h30</td>
+                    <td>Paulo Henrique Lima</td>
+                    <td>55</td>
+                    <td>Exame de PSA</td>
+                    <td>Dra. Camilla Ferreira</td>
+                    <td class="agendado">Agendado</td>
+                </tr>
+                <tr>
+                    <td>14h15</td>
+                    <td>José Eduardo Rodrigues</td>
+                    <td>71</td>
+                    <td>Ultrassonografia de Próstata</td>
+                    <td>Dr. Roberto Mendes</td>
+                    <td class="agendado">Agendado</td>
+                </tr>
+                <tr>
+                    <td>15h00</td>
+                    <td>Marcelo Ribeiro Almeida</td>
+                    <td>60</td>
+                    <td>Consulta Preventiva</td>
+                    <td>Dra. Mariana Santos</td>
+                    <td class="agendado">Agendado</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Atendimentos totais</td>
+                    <td>8</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+
+    <h2 class="prevencao">RECOMENDAÇÕES E PREVENÇÃO</h2>
+    <div class="cards">
+        <div class="card1">Alimentação Saúdavel e Prática de Atividades Físicas</div>
+        <div class="card2">A Importância dos Exames Anuais de PSA e Toque</div>
+        <div class="card3">Histórico Familiar e Fatores de Risco</div>
+    </div>
+
+    <div>
+        <section class="agendamento" id="agendamentos">
+            <h2 class="titulo">AGENDAMENTO</h2>
+            <form class="agendamento-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome:" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade:" required>
+            </div>
+            <div class="form-grup">
+                <label for="telefone">Telefone/WhatsApp:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX)XXXXX XXXX">
+            </div>
+            <div class="form-group2">
+                <label for="exame">Selecione o tipo de exame</label>
+                <select id="cidade" name="cidade">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="psa">Exame de PSA</option>
+                    <option value="biopsia">Biópsia</option>
+                    <option value="ultrassonografia">Ultrassonografia de Próstata</option>
+                    <option value="consulta">Consulta Preventiva</option>
+                </select>
+            </div>
+            <button type="submit" class="agendar">Agendar Consulta Gratuita 🎗️</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <p>🎗️ Campanha Novembro Azul | Cuide de quem você ama, previna-se!</p>
+        <p>Produzido por Kamilly Ribeiro | Squad Arkhe 🐦‍🔥</p>
+    </footer>
+</body>
+
+</html>
